@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MyRouter Preview</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: #0066cc;
+            color: white;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            margin: -20px -20px 20px -20px;
+        }
+        .status-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MyRouter System Preview</h1>
+        </div>
+        <div class="grid">
+            <div class="status-card">
+                <h2>系统状态</h2>
+                <div id="system-status">
+                    <p>CPU使用率: <span id="cpu-usage">加载中...</span></p>
+                    <p>内存使用: <span id="memory-usage">加载中...</span></p>
+                    <p>运行时间: <span id="uptime">加载中...</span></p>
+                </div>
+            </div>
+            <div class="status-card">
+                <h2>网络状态</h2>
+                <div id="network-status">
+                    <p>WAN IP: <span id="wan-ip">加载中...</span></p>
+                    <p>下载速度: <span id="download-speed">加载中...</span></p>
+                    <p>上传速度: <span id="upload-speed">加载中...</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/status.js"></script>
+</body>
+</html> 
